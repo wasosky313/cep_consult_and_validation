@@ -422,3 +422,6 @@ obj/
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,dotnetcore,visualstudiocode
+
+# Intellij Ride
+GetCep/.idea

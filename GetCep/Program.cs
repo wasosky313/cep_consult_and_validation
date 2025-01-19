@@ -10,6 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); 
 
 builder.Services.AddScoped<GetCepService>();
+builder.Services.AddHttpClient<GetCepService>();
+
 
 
 var app = builder.Build();
