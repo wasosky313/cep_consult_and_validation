@@ -1,3 +1,4 @@
+using GetCep.Interfaces;
 using GetCep.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<GetCepService>();
 builder.Services.AddHttpClient<GetCepService>();
+builder.Services.AddHttpClient<ICepInterface, GetCepService>();
 
 
 

@@ -1,9 +1,10 @@
 using System.Text.Json;
+using GetCep.Interfaces;
 using GetCep.Models;
 
 namespace GetCep.Services
 {
-    public class GetCepService
+    public class GetCepService : ICepInterface  // TODO Create interface (Savon)
     {
         private readonly HttpClient _httpClient;
 
