@@ -1,0 +1,6 @@
+@GetCep_HostAddress = http://localhost:7086
+
+GET {{GetCep_HostAddress}}/cep/123
+Accept: application/json
+
+###
